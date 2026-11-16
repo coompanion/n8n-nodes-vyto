@@ -1,6 +1,6 @@
 {
   "name": "@vyto/n8n-nodes-vyto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n nodes for vyto: traffic fines for rental and fleet operators. Trigger on new or changed cases, search cases, upload notices.",
   "license": "MIT",
   "homepage": "https://github.com/coompanion/n8n-nodes-vyto#readme",
@@ -12,7 +12,7 @@
   ],
   "author": {
     "name": "vyto",
-    "email": "info@vyto.ai"
+    "email": "support@vyto.ai"
   },
   "repository": {
     "type": "git",
