@@ -1,0 +1,62 @@
+{
+  "name": "@vyto/n8n-nodes-vyto",
+  "version": "0.1.0",
+  "description": "n8n nodes for vyto: traffic fines for rental and fleet operators. Trigger on new or changed cases, search cases, upload notices.",
+  "license": "MIT",
+  "homepage": "https://github.com/coompanion/n8n-nodes-vyto#readme",
+  "keywords": [
+    "n8n-community-node-package",
+    "vyto",
+    "traffic fines",
+    "fleet"
+  ],
+  "author": {
+    "name": "vyto",
+    "email": "info@vyto.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coompanion/n8n-nodes-vyto.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease",
+    "test": "n8n-node build && node --test test/*.test.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/VytoApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Vyto/Vyto.node.js",
+      "dist/nodes/Vyto/VytoTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "0.56.4",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^21.1.0",
+    "typescript": "5.9.2",
+    "n8n-workflow": "2.16.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/coompanion/n8n-nodes-vyto/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

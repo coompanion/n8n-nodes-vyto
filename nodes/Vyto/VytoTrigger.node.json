@@ -1,0 +1,21 @@
+{
+	"node": "@vyto/n8n-nodes-vyto.vytoTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Productivity",
+		"Sales"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/coompanion/n8n-nodes-vyto#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/coompanion/n8n-nodes-vyto"
+			}
+		]
+	}
+}
